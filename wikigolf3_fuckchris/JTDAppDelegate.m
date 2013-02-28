@@ -7,12 +7,16 @@
 //
 
 #import "JTDAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation JTDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"KLVVglVBszgsMbUOZvgHNPnNcHAPW7PSKTK8wBSE"
+                  clientKey:@"R4VK8Kf7N6iWD9UrekpHciNVsWjgyjLaPvR023Bc"];
+
     return YES;
 }
 							
