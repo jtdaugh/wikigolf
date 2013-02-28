@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface JTDViewController : UIViewController
+@interface JTDViewController : UIViewController 
+
+-(IBAction)playClicked;
+-(IBAction)instructionsClicked;
+-(IBAction)leaderboardsClicked;
+-(IBAction)shareClicked;
 
 @end

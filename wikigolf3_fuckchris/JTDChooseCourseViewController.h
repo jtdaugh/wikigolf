@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import "JTDParseData.h"
+#import "JTDWikiViewController.h"
 
-@interface JTDChooseCourseViewController : UIViewController
+@interface JTDChooseCourseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end

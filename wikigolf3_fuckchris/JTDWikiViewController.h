@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface JTDWikiViewController : UIViewController
+@interface JTDWikiViewController : UIViewController {
+    PFObject *course;
+}
+
+@property(nonatomic,retain) PFObject *course;
+
 
 @end

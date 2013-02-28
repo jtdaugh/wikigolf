@@ -69,12 +69,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JkX-GA-06C" firstAttribute="top" secondItem="3" secondAttribute="top" constant="51" id="7Ds-ZI-2DC"/>
-                            <constraint firstItem="AM1-TO-mi0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="134" id="Bvh-0W-5Mn"/>
-                            <constraint firstItem="aWN-3J-Crf" firstAttribute="leading" secondItem="AM1-TO-mi0" secondAttribute="leading" type="default" id="R00-6a-VYb"/>
-                            <constraint firstItem="AM1-TO-mi0" firstAttribute="leading" secondItem="JkX-GA-06C" secondAttribute="leading" type="default" id="X0R-T4-UeW"/>
-                            <constraint firstItem="aWN-3J-Crf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="230" id="wBn-GV-UkR"/>
-                            <constraint firstItem="JkX-GA-06C" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="113" id="wVz-6h-HDM"/>
+                            <constraint firstItem="AM1-TO-mi0" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="21N-X2-MNH"/>
+                            <constraint firstItem="aWN-3J-Crf" firstAttribute="centerX" secondItem="AM1-TO-mi0" secondAttribute="centerX" type="default" id="Akz-gA-JpD"/>
+                            <constraint firstItem="AM1-TO-mi0" firstAttribute="centerX" secondItem="JkX-GA-06C" secondAttribute="centerX" type="default" id="Dvf-QY-2z7"/>
+                            <constraint firstItem="AM1-TO-mi0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="222" id="E7F-KR-feh"/>
+                            <constraint firstAttribute="bottom" secondItem="aWN-3J-Crf" secondAttribute="bottom" constant="148" id="StG-0C-nlx"/>
+                            <constraint firstItem="JkX-GA-06C" firstAttribute="top" secondItem="3" secondAttribute="top" constant="136" id="oP8-cy-pxl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1IL-30-lm6"/>
@@ -123,7 +123,22 @@
                     <view key="view" contentMode="scaleToFill" id="MTy-0u-cnR">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TyO-yy-EC1">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IdR-yM-m44" id="cNa-w5-jzn"/>
+                                    <outlet property="delegate" destination="IdR-yM-m44" id="aAn-16-lU6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TyO-yy-EC1" firstAttribute="bottom" secondItem="MTy-0u-cnR" secondAttribute="bottom" type="default" id="DFa-YO-w0A"/>
+                            <constraint firstItem="TyO-yy-EC1" firstAttribute="top" secondItem="MTy-0u-cnR" secondAttribute="top" type="default" id="Gwr-zC-YaI"/>
+                            <constraint firstItem="TyO-yy-EC1" firstAttribute="trailing" secondItem="MTy-0u-cnR" secondAttribute="trailing" type="default" id="g8K-Vr-eov"/>
+                            <constraint firstItem="TyO-yy-EC1" firstAttribute="leading" secondItem="MTy-0u-cnR" secondAttribute="leading" type="default" id="pUi-I0-JnF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="M2l-ZE-Fy1"/>
                     <connections>
@@ -133,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWg-oA-Ex9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1841" y="368"/>
+            <point key="canvasLocation" x="-1831" y="328"/>
         </scene>
         <!--Instructions View Controller-->
         <scene sceneID="0pv-cH-GpK">
@@ -223,6 +238,9 @@
         </class>
         <class className="JTDChooseCourseViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDChooseCourseViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="JTDCreateCourseViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDCreateCourseViewController.h"/>
@@ -241,6 +259,12 @@
         </class>
         <class className="JTDViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="instructionsClicked"/>
+                <relationship kind="action" name="leaderboardsClicked"/>
+                <relationship kind="action" name="playClicked"/>
+                <relationship kind="action" name="shareClicked"/>
+            </relationships>
         </class>
         <class className="JTDWikiViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDWikiViewController.h"/>

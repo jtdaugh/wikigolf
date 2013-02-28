@@ -40,6 +40,7 @@
 		884EDF8A16DF04BC00FF3FCD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884EDF8016DF04BB00FF3FCD /* Social.framework */; };
 		884EDF8B16DF04BC00FF3FCD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884EDF8116DF04BB00FF3FCD /* StoreKit.framework */; };
 		884EDF8C16DF04BC00FF3FCD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884EDF8216DF04BC00FF3FCD /* SystemConfiguration.framework */; };
+		884EDF8F16DF255F00FF3FCD /* JTDParseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF8E16DF255F00FF3FCD /* JTDParseData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,8 @@
 		884EDF8016DF04BB00FF3FCD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		884EDF8116DF04BB00FF3FCD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		884EDF8216DF04BC00FF3FCD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		884EDF8D16DF255F00FF3FCD /* JTDParseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDParseData.h; sourceTree = "<group>"; };
+		884EDF8E16DF255F00FF3FCD /* JTDParseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDParseData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,21 +172,23 @@
 				884EDF5116DEFA1C00FF3FCD /* JTDViewController.h */,
 				884EDF5216DEFA1C00FF3FCD /* JTDViewController.m */,
 				884EDF5916DEFBD500FF3FCD /* JTDChooseCourseViewController.h */,
+				884EDF5A16DEFBD500FF3FCD /* JTDChooseCourseViewController.m */,
 				884EDF5C16DEFBE400FF3FCD /* JTDWikiViewController.h */,
+				884EDF5D16DEFBE400FF3FCD /* JTDWikiViewController.m */,
 				884EDF5F16DEFBF200FF3FCD /* JTDScoreViewController.h */,
 				884EDF6016DEFBF200FF3FCD /* JTDScoreViewController.m */,
 				884EDF6216DEFC1000FF3FCD /* JTDRoundFinishedViewController.h */,
 				884EDF6316DEFC1000FF3FCD /* JTDRoundFinishedViewController.m */,
 				884EDF6516DEFC1B00FF3FCD /* JTDLeaderboardViewController.h */,
 				884EDF6616DEFC1B00FF3FCD /* JTDLeaderboardViewController.m */,
+				884EDF8D16DF255F00FF3FCD /* JTDParseData.h */,
+				884EDF8E16DF255F00FF3FCD /* JTDParseData.m */,
 				884EDF6816DEFC2400FF3FCD /* JTDCreateCourseViewController.h */,
+				884EDF6916DEFC2400FF3FCD /* JTDCreateCourseViewController.m */,
 				884EDF6B16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.h */,
 				884EDF6C16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.m */,
 				884EDF6E16DEFC4600FF3FCD /* JTDInstructionsViewController.h */,
 				884EDF6F16DEFC4700FF3FCD /* JTDInstructionsViewController.m */,
-				884EDF6916DEFC2400FF3FCD /* JTDCreateCourseViewController.m */,
-				884EDF5D16DEFBE400FF3FCD /* JTDWikiViewController.m */,
-				884EDF5A16DEFBD500FF3FCD /* JTDChooseCourseViewController.m */,
 				884EDF3D16DEFA1C00FF3FCD /* Supporting Files */,
 			);
 			path = wikigolf3_fuckchris;
@@ -281,6 +286,7 @@
 				884EDF6A16DEFC2400FF3FCD /* JTDCreateCourseViewController.m in Sources */,
 				884EDF6D16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.m in Sources */,
 				884EDF7016DEFC4700FF3FCD /* JTDInstructionsViewController.m in Sources */,
+				884EDF8F16DF255F00FF3FCD /* JTDParseData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

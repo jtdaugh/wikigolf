@@ -13,6 +13,7 @@
 @end
 
 @implementation JTDWikiViewController
+@synthesize course;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
