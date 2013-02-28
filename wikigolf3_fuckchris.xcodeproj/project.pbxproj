@@ -18,6 +18,14 @@
 		884EDF4D16DEFA1C00FF3FCD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 884EDF4C16DEFA1C00FF3FCD /* Default-568h@2x.png */; };
 		884EDF5016DEFA1C00FF3FCD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884EDF4E16DEFA1C00FF3FCD /* MainStoryboard.storyboard */; };
 		884EDF5316DEFA1C00FF3FCD /* JTDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF5216DEFA1C00FF3FCD /* JTDViewController.m */; };
+		884EDF5B16DEFBD500FF3FCD /* JTDChooseCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF5A16DEFBD500FF3FCD /* JTDChooseCourseViewController.m */; };
+		884EDF5E16DEFBE400FF3FCD /* JTDWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF5D16DEFBE400FF3FCD /* JTDWikiViewController.m */; };
+		884EDF6116DEFBF200FF3FCD /* JTDScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF6016DEFBF200FF3FCD /* JTDScoreViewController.m */; };
+		884EDF6416DEFC1000FF3FCD /* JTDRoundFinishedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF6316DEFC1000FF3FCD /* JTDRoundFinishedViewController.m */; };
+		884EDF6716DEFC1B00FF3FCD /* JTDLeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF6616DEFC1B00FF3FCD /* JTDLeaderboardViewController.m */; };
+		884EDF6A16DEFC2400FF3FCD /* JTDCreateCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF6916DEFC2400FF3FCD /* JTDCreateCourseViewController.m */; };
+		884EDF6D16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF6C16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.m */; };
+		884EDF7016DEFC4700FF3FCD /* JTDInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884EDF6F16DEFC4700FF3FCD /* JTDInstructionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +45,22 @@
 		884EDF4F16DEFA1C00FF3FCD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		884EDF5116DEFA1C00FF3FCD /* JTDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTDViewController.h; sourceTree = "<group>"; };
 		884EDF5216DEFA1C00FF3FCD /* JTDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTDViewController.m; sourceTree = "<group>"; };
+		884EDF5916DEFBD500FF3FCD /* JTDChooseCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDChooseCourseViewController.h; sourceTree = "<group>"; };
+		884EDF5A16DEFBD500FF3FCD /* JTDChooseCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDChooseCourseViewController.m; sourceTree = "<group>"; };
+		884EDF5C16DEFBE400FF3FCD /* JTDWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDWikiViewController.h; sourceTree = "<group>"; };
+		884EDF5D16DEFBE400FF3FCD /* JTDWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDWikiViewController.m; sourceTree = "<group>"; };
+		884EDF5F16DEFBF200FF3FCD /* JTDScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDScoreViewController.h; sourceTree = "<group>"; };
+		884EDF6016DEFBF200FF3FCD /* JTDScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDScoreViewController.m; sourceTree = "<group>"; };
+		884EDF6216DEFC1000FF3FCD /* JTDRoundFinishedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDRoundFinishedViewController.h; sourceTree = "<group>"; };
+		884EDF6316DEFC1000FF3FCD /* JTDRoundFinishedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDRoundFinishedViewController.m; sourceTree = "<group>"; };
+		884EDF6516DEFC1B00FF3FCD /* JTDLeaderboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDLeaderboardViewController.h; sourceTree = "<group>"; };
+		884EDF6616DEFC1B00FF3FCD /* JTDLeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDLeaderboardViewController.m; sourceTree = "<group>"; };
+		884EDF6816DEFC2400FF3FCD /* JTDCreateCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDCreateCourseViewController.h; sourceTree = "<group>"; };
+		884EDF6916DEFC2400FF3FCD /* JTDCreateCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDCreateCourseViewController.m; sourceTree = "<group>"; };
+		884EDF6B16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDAddCourseHoleViewController.h; sourceTree = "<group>"; };
+		884EDF6C16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDAddCourseHoleViewController.m; sourceTree = "<group>"; };
+		884EDF6E16DEFC4600FF3FCD /* JTDInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDInstructionsViewController.h; sourceTree = "<group>"; };
+		884EDF6F16DEFC4700FF3FCD /* JTDInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDInstructionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +112,22 @@
 				884EDF4E16DEFA1C00FF3FCD /* MainStoryboard.storyboard */,
 				884EDF5116DEFA1C00FF3FCD /* JTDViewController.h */,
 				884EDF5216DEFA1C00FF3FCD /* JTDViewController.m */,
+				884EDF5916DEFBD500FF3FCD /* JTDChooseCourseViewController.h */,
+				884EDF5C16DEFBE400FF3FCD /* JTDWikiViewController.h */,
+				884EDF5F16DEFBF200FF3FCD /* JTDScoreViewController.h */,
+				884EDF6016DEFBF200FF3FCD /* JTDScoreViewController.m */,
+				884EDF6216DEFC1000FF3FCD /* JTDRoundFinishedViewController.h */,
+				884EDF6316DEFC1000FF3FCD /* JTDRoundFinishedViewController.m */,
+				884EDF6516DEFC1B00FF3FCD /* JTDLeaderboardViewController.h */,
+				884EDF6616DEFC1B00FF3FCD /* JTDLeaderboardViewController.m */,
+				884EDF6816DEFC2400FF3FCD /* JTDCreateCourseViewController.h */,
+				884EDF6B16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.h */,
+				884EDF6C16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.m */,
+				884EDF6E16DEFC4600FF3FCD /* JTDInstructionsViewController.h */,
+				884EDF6F16DEFC4700FF3FCD /* JTDInstructionsViewController.m */,
+				884EDF6916DEFC2400FF3FCD /* JTDCreateCourseViewController.m */,
+				884EDF5D16DEFBE400FF3FCD /* JTDWikiViewController.m */,
+				884EDF5A16DEFBD500FF3FCD /* JTDChooseCourseViewController.m */,
 				884EDF3D16DEFA1C00FF3FCD /* Supporting Files */,
 			);
 			path = wikigolf3_fuckchris;
@@ -177,6 +217,14 @@
 				884EDF4316DEFA1C00FF3FCD /* main.m in Sources */,
 				884EDF4716DEFA1C00FF3FCD /* JTDAppDelegate.m in Sources */,
 				884EDF5316DEFA1C00FF3FCD /* JTDViewController.m in Sources */,
+				884EDF5B16DEFBD500FF3FCD /* JTDChooseCourseViewController.m in Sources */,
+				884EDF5E16DEFBE400FF3FCD /* JTDWikiViewController.m in Sources */,
+				884EDF6116DEFBF200FF3FCD /* JTDScoreViewController.m in Sources */,
+				884EDF6416DEFC1000FF3FCD /* JTDRoundFinishedViewController.m in Sources */,
+				884EDF6716DEFC1B00FF3FCD /* JTDLeaderboardViewController.m in Sources */,
+				884EDF6A16DEFC2400FF3FCD /* JTDCreateCourseViewController.m in Sources */,
+				884EDF6D16DEFC3700FF3FCD /* JTDAddCourseHoleViewController.m in Sources */,
+				884EDF7016DEFC4700FF3FCD /* JTDInstructionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

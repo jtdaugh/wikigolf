@@ -1,23 +1,254 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lvC-Ab-R2w">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="9uv-Mr-isR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="lvC-Ab-R2w" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NZN-HL-iBQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="4Nh-RH-4RC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qze-y6-hha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3004" y="351"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="JTDViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkX-GA-06C">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IdR-yM-m44" kind="push" id="AcA-OB-XdZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM1-TO-mi0">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Instructions">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mMR-IG-e4b" kind="push" id="kkJ-pS-did"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWN-3J-Crf">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Leaderboards">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="88B-R9-zTS" kind="push" id="hAw-q3-fJo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JkX-GA-06C" firstAttribute="top" secondItem="3" secondAttribute="top" constant="51" id="7Ds-ZI-2DC"/>
+                            <constraint firstItem="AM1-TO-mi0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="134" id="Bvh-0W-5Mn"/>
+                            <constraint firstItem="aWN-3J-Crf" firstAttribute="leading" secondItem="AM1-TO-mi0" secondAttribute="leading" type="default" id="R00-6a-VYb"/>
+                            <constraint firstItem="AM1-TO-mi0" firstAttribute="leading" secondItem="JkX-GA-06C" secondAttribute="leading" type="default" id="X0R-T4-UeW"/>
+                            <constraint firstItem="aWN-3J-Crf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="230" id="wBn-GV-UkR"/>
+                            <constraint firstItem="JkX-GA-06C" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="113" id="wVz-6h-HDM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1IL-30-lm6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2428" y="328"/>
+        </scene>
+        <!--Create Course View Controller-->
+        <scene sceneID="ovK-TR-fQ4">
+            <objects>
+                <viewController id="u64-la-WAr" customClass="JTDCreateCourseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KRL-1j-EP3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lTi-TU-fCj"/>
+                    <connections>
+                        <segue destination="9dH-sL-Ykp" kind="push" id="MLd-Wm-NUS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoZ-su-2W3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1313" y="-405"/>
+        </scene>
+        <!--Add Course Hole View Controller-->
+        <scene sceneID="35p-38-YRt">
+            <objects>
+                <viewController id="9dH-sL-Ykp" customClass="JTDAddCourseHoleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oOx-OA-wdj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jFt-Kq-Eqb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V0R-9K-Y91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-821" y="-405"/>
+        </scene>
+        <!--Choose Course View Controller-->
+        <scene sceneID="gKM-XG-fkQ">
+            <objects>
+                <viewController id="IdR-yM-m44" customClass="JTDChooseCourseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MTy-0u-cnR">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M2l-ZE-Fy1"/>
+                    <connections>
+                        <segue destination="u64-la-WAr" kind="push" id="Yai-Gs-dZH"/>
+                        <segue destination="wlm-Dc-zfL" kind="push" id="GhA-Yq-xcI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWg-oA-Ex9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1841" y="368"/>
+        </scene>
+        <!--Instructions View Controller-->
+        <scene sceneID="0pv-cH-GpK">
+            <objects>
+                <viewController id="mMR-IG-e4b" customClass="JTDInstructionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yeX-wI-SiX">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ow4-QH-bDN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zuc-mf-3Ol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1841" y="1143"/>
+        </scene>
+        <!--Leaderboard View Controller-->
+        <scene sceneID="5go-87-YLq">
+            <objects>
+                <viewController id="88B-R9-zTS" customClass="JTDLeaderboardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LEl-Tk-f4p">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vVB-3r-FCA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adv-50-LOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1854" y="1855"/>
+        </scene>
+        <!--Wiki View Controller-->
+        <scene sceneID="jQE-JX-b0V">
+            <objects>
+                <viewController id="wlm-Dc-zfL" customClass="JTDWikiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AV2-ZW-T6b">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aLM-ZH-Dq3"/>
+                    <connections>
+                        <segue destination="qYY-UU-aPp" kind="push" id="mnT-rq-wQy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5k-7W-RFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1313" y="360"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="OHX-v5-XBU">
+            <objects>
+                <viewController id="qYY-UU-aPp" customClass="JTDScoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1rd-tj-pWf">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="awN-m2-h5o"/>
+                    <connections>
+                        <segue destination="lBG-ph-rI9" kind="push" id="bwX-KQ-Mj4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Raz-zm-pw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-821" y="360"/>
+        </scene>
+        <!--Round Finished View Controller-->
+        <scene sceneID="bX9-kf-BSO">
+            <objects>
+                <viewController id="lBG-ph-rI9" customClass="JTDRoundFinishedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K9R-fA-Jpu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0pj-o2-76O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGG-KV-GbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-345" y="360"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="JTDAddCourseHoleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDAddCourseHoleViewController.h"/>
+        </class>
+        <class className="JTDChooseCourseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDChooseCourseViewController.h"/>
+        </class>
+        <class className="JTDCreateCourseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDCreateCourseViewController.h"/>
+        </class>
+        <class className="JTDInstructionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDInstructionsViewController.h"/>
+        </class>
+        <class className="JTDLeaderboardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDLeaderboardViewController.h"/>
+        </class>
+        <class className="JTDRoundFinishedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDRoundFinishedViewController.h"/>
+        </class>
+        <class className="JTDScoreViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDScoreViewController.h"/>
+        </class>
+        <class className="JTDViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDViewController.h"/>
+        </class>
+        <class className="JTDWikiViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDWikiViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
