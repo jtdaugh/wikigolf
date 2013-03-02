@@ -86,8 +86,8 @@
         <!--Create Course View Controller-->
         <scene sceneID="ovK-TR-fQ4">
             <objects>
-                <viewController id="u64-la-WAr" customClass="JTDCreateCourseViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KRL-1j-EP3">
+                <viewController storyboardIdentifier="choose2create" id="u64-la-WAr" customClass="JTDCreateCourseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="choose2create" id="KRL-1j-EP3">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -124,8 +124,8 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TyO-yy-EC1">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="TyO-yy-EC1">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="IdR-yM-m44" id="cNa-w5-jzn"/>
                                     <outlet property="delegate" destination="IdR-yM-m44" id="aAn-16-lU6"/>
@@ -142,8 +142,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="M2l-ZE-Fy1"/>
                     <connections>
-                        <segue destination="u64-la-WAr" kind="push" id="Yai-Gs-dZH"/>
-                        <segue destination="wlm-Dc-zfL" kind="push" id="GhA-Yq-xcI"/>
+                        <segue destination="u64-la-WAr" kind="push" identifier="" id="Yai-Gs-dZH"/>
+                        <segue destination="wlm-Dc-zfL" kind="push" identifier="" id="GhA-Yq-xcI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWg-oA-Ex9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -183,8 +183,8 @@
         <!--Wiki View Controller-->
         <scene sceneID="jQE-JX-b0V">
             <objects>
-                <viewController id="wlm-Dc-zfL" customClass="JTDWikiViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AV2-ZW-T6b">
+                <viewController storyboardIdentifier="courseChosen" id="wlm-Dc-zfL" customClass="JTDWikiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="courseChosen" id="AV2-ZW-T6b">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -232,47 +232,6 @@
             <point key="canvasLocation" x="-345" y="360"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="JTDAddCourseHoleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDAddCourseHoleViewController.h"/>
-        </class>
-        <class className="JTDChooseCourseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDChooseCourseViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="JTDCreateCourseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDCreateCourseViewController.h"/>
-        </class>
-        <class className="JTDInstructionsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDInstructionsViewController.h"/>
-        </class>
-        <class className="JTDLeaderboardViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDLeaderboardViewController.h"/>
-        </class>
-        <class className="JTDRoundFinishedViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDRoundFinishedViewController.h"/>
-        </class>
-        <class className="JTDScoreViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDScoreViewController.h"/>
-        </class>
-        <class className="JTDViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="instructionsClicked"/>
-                <relationship kind="action" name="leaderboardsClicked"/>
-                <relationship kind="action" name="playClicked"/>
-                <relationship kind="action" name="shareClicked"/>
-            </relationships>
-        </class>
-        <class className="JTDWikiViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTDWikiViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

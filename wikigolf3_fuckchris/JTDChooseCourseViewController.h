@@ -10,9 +10,12 @@
 #import <Parse/Parse.h>
 #import "JTDParseData.h"
 #import "JTDWikiViewController.h"
+#import "JTDCreateCourseViewController.h"
 
 @interface JTDChooseCourseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+
+-(UITableViewCell *) newCourseButtonCell:(UITableViewCell *)cell;
 
 @end

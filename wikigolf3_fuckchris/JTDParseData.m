@@ -36,6 +36,7 @@
 
 -(void) getDefaultCoursesFromParse {
     PFQuery *query = [PFQuery queryWithClassName:@"Course"];
+    [query addDescendingOrder:@"popularity"];
     [query whereKey:@"default" equalTo:[NSNumber numberWithBool:YES]];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -69,6 +70,8 @@
 -(void) getUserCoursesFromParse {
     PFQuery *query = [PFQuery queryWithClassName:@"Course"];
     [query whereKey:@"default" equalTo:[NSNumber numberWithBool:NO]];
+    [query addDescendingOrder:@"createdAt"];
+    [query setLimit:20];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.

@@ -8,6 +8,7 @@
 
 #import "JTDAppDelegate.h"
 #import <Parse/Parse.h>
+#import "JTDParseData.h"
 
 @implementation JTDAppDelegate
 
@@ -16,7 +17,7 @@
     // Override point for customization after application launch.
     [Parse setApplicationId:@"KLVVglVBszgsMbUOZvgHNPnNcHAPW7PSKTK8wBSE"
                   clientKey:@"R4VK8Kf7N6iWD9UrekpHciNVsWjgyjLaPvR023Bc"];
-
+    [JTDParseData sharedParseData];
     return YES;
 }
 							

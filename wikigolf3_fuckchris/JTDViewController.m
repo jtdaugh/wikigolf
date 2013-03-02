@@ -18,7 +18,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [JTDParseData sharedParseData];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
